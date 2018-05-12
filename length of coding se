@@ -1,0 +1,7 @@
+coding = open('/Users/rachelgrant/Desktop/wol_genomes/cds/30.ffn')
+#seq=coding.read()
+counter = 0
+for line in coding:
+    if not line.startswith('>'):
+       counter = counter + len(line)
+print(counter)
