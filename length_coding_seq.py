@@ -1,5 +1,8 @@
-coding = open('/Users/rachelgrant/Desktop/wol_genomes/cds/30.ffn')
-#seq=coding.read()
+# length_of_coding_seq.py sequence.txt
+
+import sys
+
+coding = open(sys.argv[1])
 counter = 0
 for line in coding:
     if not line.startswith('>'):
